@@ -14,4 +14,6 @@ Order of project execution in the flow:
 
 To run each pipeline set eg. `Sys.setenv(TAR_PROJECT = "preprocessing")`. Names of projects are stored in `_targets.yaml`
 
+To run entire flow simply run `run.R`
+
 Quarto report properties are defined in `_quarto.yml`
