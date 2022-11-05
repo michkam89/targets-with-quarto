@@ -2,6 +2,7 @@
 title: "Palmer penguins report"
 format: html
 editor: visual
+self-contained: true
 params:
   species: "adelie"
   island: "Torgersen"
