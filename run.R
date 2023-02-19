@@ -1,8 +1,6 @@
 library(targets)
 
-Sys.setenv("TAR_PROJECT" = "preprocessing")
+Sys.setenv("TAR_PROJECT" = "childs")
 tar_make()
-Sys.setenv("TAR_PROJECT" = "modelling")
-tar_make()
-Sys.setenv("TAR_PROJECT" = "reporting")
+Sys.setenv("TAR_PROJECT" = "final")
 tar_make()

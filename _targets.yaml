@@ -1,9 +1,7 @@
-preprocessing:
-  store: preprocessing_store
-  script: tar_preprocessing.R
-modelling:
-  store: modelling_store
-  script: tar_modelling.R
-reporting:
-  store: reporting_store
-  script: tar_reporting.R
+childs:
+  store: childs_store
+  script: tar_childs.R
+final:
+  store: final_store
+  script: tar_final.R
+

@@ -1,0 +1,11 @@
+---
+title: "master template"
+format: html
+editor: visual
+---
+
+This is master template that will include childs!
+
+{{< include child_report1.md >}}
+
+{{< include child_report2.md >}}

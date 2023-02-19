@@ -1,19 +1,13 @@
 # Targets with Quarto
 
-Create `{targets}` pipeline with `Quarto` report(s) as side effect.
+Create simple `{targets}` pipeline with `Quarto` report(s) as side effect. The pipeline consists of 2 projects (defined ind `_targets.yaml` config file).
 
 ## Usage
 
-Order of project execution in the flow:
+1.  Restore environment with `renv::restore()`
 
-1.  tar_preprocessing.R
+2.  To run entire pipeline simply run `Rscript run.R`
 
-2.  tar_modelling.R
+-   This will first trigger project `childs` that is defined in `tar_childs.R` - creates intermediate `.md` files that will be included in the final report.
 
-3.  tar_reporting.R
-
-To run each pipeline set eg. `Sys.setenv(TAR_PROJECT = "preprocessing")`. Names of projects are stored in `_targets.yaml`
-
-To run entire flow simply run `run.R`
-
-Quarto report properties are defined in `_quarto.yml`
+-   Second will be project `final` that simply pastes both *childs* into single report.

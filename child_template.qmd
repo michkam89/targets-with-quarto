@@ -1,0 +1,22 @@
+---
+title: "child_template"
+format: markdown
+editor: visual
+params:
+  par: default
+---
+
+## This document will be included as a part of master template
+
+```{r}
+targets::tar_read(data)
+```
+
+```{r}
+runif(1)
+```
+
+```{r}
+print(params$par)
+```
+
